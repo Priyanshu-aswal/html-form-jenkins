@@ -3,12 +3,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/Priy anshu-aswal/html-form-jenkins.git'
-            }
-        }
+       stage('Checkout') {
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/Priyanshu-aswal/html-form-jenkins.git'
+    }
+}
 
         stage('Test HTML Form') {
             steps {
